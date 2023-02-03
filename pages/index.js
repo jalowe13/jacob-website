@@ -7,12 +7,16 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
+
+// Sleeper timeout
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
+// Homepage
 export default function Home() {
   const [prediction, setPrediction] = useState(null);
   const [error, setError] = useState(null);
 
+  // Submission handler for predictions
   const handleSubmit = async (e) => {
     e.preventDefault();
     const response = await fetch("/api/predictions", {
@@ -47,12 +51,15 @@ export default function Home() {
     }
   };
 
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Replicate + Next.js</title>
-      </Head>
 
+  // Start Return function of the style that returning JSX React code
+  return (
+    <div className={styles.bg}>
+
+    <div className={styles.container}>
+      <Head className={styles.bg}>
+        <title>Jacob Lowe</title>
+      </Head>
       <p>
         Dream something with{" "}
         <a href="https://replicate.com/stability-ai/stable-diffusion">stability-ai/stable-diffusion</a>:
@@ -81,5 +88,7 @@ export default function Home() {
         </div>
       )}
     </div>
+    </div>
+    
   );
 }
