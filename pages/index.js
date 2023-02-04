@@ -6,7 +6,17 @@ import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import { ProSidebarProvider } from "react-pro-sidebar";
+import Layout from "../components/Layout/Layout";
 
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom"
+import Stability from "./stability";
 
 // Sleeper timeout
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -54,41 +64,101 @@ export default function Home() {
 
   // Start Return function of the style that returning JSX React code
   return (
-    <div className={styles.bg}>
+<div className={styles.bg}>
 
+<ProSidebarProvider>
+  <Head>
+    <title>Art Gen</title>
+  </Head>
     <div className={styles.container}>
-      <Head className={styles.bg}>
-        <title>Jacob Lowe</title>
-      </Head>
-      <p>
-        Dream something with{" "}
-        <a href="https://replicate.com/stability-ai/stable-diffusion">stability-ai/stable-diffusion</a>:
-      </p>
-
-      <form className={styles.form} onSubmit={handleSubmit}>
-        <input type="text" name="prompt" placeholder="Enter a prompt to display an image" />
-        <button type="submit">Go!</button>
-      </form>
-
-      {error && <div>{error}</div>}
-
-      {prediction && (
-        <div>
-            {prediction.output && (
-              <div className={styles.imageWrapper}>
-              <Image
-                fill
-                src={prediction.output[prediction.output.length - 1]}
-                alt="output"
-                sizes='100vw'
-              />
-              </div>
-            )}  
-            <p>status: {prediction.status}</p>
-        </div>
-      )}
-    </div>
-    </div>
-    
+        <p>
+          Dream something with{" "}
+          <a href="https://replicate.com/stability-ai/stable-diffusion">stability-ai/stable-diffusion</a>:
+        </p>
+        <form className={styles.form} onSubmit={handleSubmit}>
+          <input type="text" name="prompt" placeholder="Enter a prompt to display an image" />
+          <button type="submit">Go!</button>
+        </form>
+        {error && <div>{error}</div>}
+        {prediction && (
+          <div>
+              {prediction.output && (
+                <div className={styles.imageWrapper}>
+                <Image
+                  fill
+                  src={prediction.output[prediction.output.length - 1]}
+                  alt="output"
+                  sizes='100vw'
+                />
+                </div>
+              )}  
+              <p>status: {prediction.status}</p>
+          </div>
+        )}
+      </div>
+<Layout> </Layout>
+</ProSidebarProvider>
+</div>
   );
 }
+
+
+/* Potential Router Setup
+    <Router>
+      <div>
+        <ul>
+          <li>
+            <Link to = "/"> Home</Link>
+          </li>
+        </ul>
+
+        <hr />
+        
+        <Switch>
+          <Route exact path="/">
+            <Index />
+          </Route>
+        </Switch>
+        </div>
+        </Router>
+*/
+
+
+/* Styled Dropdown
+<div className={styles.bg}>
+
+      <ProSidebarProvider>
+        <Head>
+          <title>Art Gen</title>
+        </Head>
+          <div className={styles.container}>
+              <p>
+                Dream something with{" "}
+                <a href="https://replicate.com/stability-ai/stable-diffusion">stability-ai/stable-diffusion</a>:
+              </p>
+              <form className={styles.form} onSubmit={handleSubmit}>
+                <input type="text" name="prompt" placeholder="Enter a prompt to display an image" />
+                <button type="submit">Go!</button>
+              </form>
+              {error && <div>{error}</div>}
+              {prediction && (
+                <div>
+                    {prediction.output && (
+                      <div className={styles.imageWrapper}>
+                      <Image
+                        fill
+                        src={prediction.output[prediction.output.length - 1]}
+                        alt="output"
+                        sizes='100vw'
+                      />
+                      </div>
+                    )}  
+                    <p>status: {prediction.status}</p>
+                </div>
+              )}
+            </div>
+      <Stability></Stability>
+      <Layout> </Layout>
+      </ProSidebarProvider>
+    </div>
+*/
