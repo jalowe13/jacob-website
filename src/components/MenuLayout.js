@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 // Sidebar Package - https://www.npmjs.com/package/react-pro-sidebar
 // React router Package for Menu links - https://reactrouter.com/en/main
 
-const Layout =({children}) =>{
+const MenuLayout =({children}) =>{
     return(
         <Sidebar>
             <Menu>
@@ -36,4 +36,4 @@ const Layout =({children}) =>{
     )
 }
 
-export default Layout;
+export default MenuLayout;
