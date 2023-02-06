@@ -10,27 +10,30 @@ const MenuLayout =({children}) =>{
     return(
         <Sidebar>
             <Menu>
-                  <MenuItem>
-                       About Me
-                   </MenuItem>
-                   <MenuItem>
-                       Skills
-                   </MenuItem>
-                   <MenuItem>
+                <MenuItem component={<Link to="/" />}>
+                    Home
+                </MenuItem>
+                <MenuItem component={<Link to="/about" />}>
+                    About Me
+                </MenuItem>
+                <MenuItem>
+                    Skills
+                </MenuItem>
+                <MenuItem>
                     Resume
-                   </MenuItem>
-                   <SubMenu label="Projects">
-                   <SubMenu label="School">
-                   <MenuItem>
-                       Project 1
-                   </MenuItem>
-                   </SubMenu>
-                   <SubMenu label="Personal">
-                   </SubMenu>
-                  </SubMenu>
-                  <MenuItem>
-                   Contact Me
-                   </MenuItem>
+                </MenuItem>
+                <SubMenu label="Projects">
+                <SubMenu label="School">
+                <MenuItem>
+                    Project 1
+                </MenuItem>
+                </SubMenu>
+                <SubMenu label="Personal">
+                </SubMenu>
+                </SubMenu>
+                <MenuItem>
+                Contact Me
+                </MenuItem>
              </Menu>
           </Sidebar>
     )
