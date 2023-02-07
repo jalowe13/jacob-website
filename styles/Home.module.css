@@ -1,0 +1,53 @@
+.container {            
+  padding: 2rem;
+  font-size: 1.3rem;
+  max-width: 25rem;
+  margin: 0 auto;
+  background-color: darkgreen;
+  }
+
+/* Form */
+/* User input HTML style */
+  .form {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  
+  .form input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #000;
+    border-radius: 0.25rem;
+    font-size: 1.3rem;
+    margin-right: 1rem;
+  }
+  
+  .form button {
+    padding: 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 1.3rem;
+  }
+  
+  .imageWrapper {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    position: relative
+  }
+  
+  /* Start my format */
+  .bg {
+    /*Linear gradient background color*/
+    background-image: linear-gradient(105deg, rgba(62,62,66,1) 0%, rgba(30,30,30,1) 100%);
+  
+    /* Fill to whole screen */
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }

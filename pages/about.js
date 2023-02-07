@@ -8,12 +8,10 @@ import MenuLayout from "../components/MenuLayout";
 export default function About(){
     return(
         <div className={styles.bg}>
-            <ProSidebarProvider>
                 <div className={styles.container}>
                     About Me
                 </div>
-                <MenuLayout></MenuLayout>
-            </ProSidebarProvider>
+        <MenuLayout></MenuLayout>
         </div>
     );
 }
