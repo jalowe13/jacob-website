@@ -1,1 +1,1 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+Progress on my portfolio website using Javascript, React.js, Node.js

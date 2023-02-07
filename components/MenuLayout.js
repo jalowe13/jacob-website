@@ -20,8 +20,9 @@ const MenuLayout =({children}) =>{
                 <MenuItem component={<Link href="/" />}>
                     Home
                 </MenuItem>
+                <SubMenu label="About Me">
                 <MenuItem component={<Link href="/about" />}>
-                    About Me
+                    About
                 </MenuItem>
                 <MenuItem>
                     Skills
@@ -29,13 +30,14 @@ const MenuLayout =({children}) =>{
                 <MenuItem>
                     Resume
                 </MenuItem>
+                </SubMenu>
                 <SubMenu label="Projects">
-                <SubMenu label="School">
-                <MenuItem>
-                    Project 1
+                <SubMenu label="Personal">
+                <MenuItem component={<Link href="/replicate" />}>
+                    Replicate and Next.js
                 </MenuItem>
                 </SubMenu>
-                <SubMenu label="Personal">
+                <SubMenu label="School">
                 </SubMenu>
                 </SubMenu>
                 <MenuItem>

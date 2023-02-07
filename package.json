@@ -3,9 +3,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p 80"
   },
   "dependencies": {
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
