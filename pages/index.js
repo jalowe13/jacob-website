@@ -9,12 +9,15 @@ export default function Home() {
     <div className={styles.container}>
       Jacob's Site
     </div>
+    <MenuLayout></MenuLayout>
+    <div className={styles.form}>
+    </div>
     
       <Head>
         <title>Jacob</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    <MenuLayout></MenuLayout>
+    
     </div>
   )
 }
