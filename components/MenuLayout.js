@@ -1,6 +1,7 @@
+import { useState } from 'react';
 import React from 'react';
 
-import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
+import { Sidebar, Menu, MenuItem, SubMenu, useProSidebar } from 'react-pro-sidebar';
 import { ProSidebarProvider } from 'react-pro-sidebar'
 
 // Replaces React Router
@@ -13,9 +14,10 @@ import Link from 'next/link'
 // React router migration
 
 const MenuLayout =({children}) =>{
-    return(
+    const collapsed = useState(false);
+    return(     
         <ProSidebarProvider>
-        <Sidebar>
+        <Sidebar width='192px'>
             <Menu>
                 <MenuItem component={<Link href="/" />}>
                     Home
@@ -34,7 +36,7 @@ const MenuLayout =({children}) =>{
                 <SubMenu label="Projects">
                 <SubMenu label="Personal">
                 <MenuItem component={<Link href="/replicate" />}>
-                    Replicate and Next.js
+                Replicate
                 </MenuItem>
                 </SubMenu>
                 <SubMenu label="School">
@@ -45,6 +47,7 @@ const MenuLayout =({children}) =>{
                 </MenuItem>
              </Menu>
           </Sidebar>
+
           </ProSidebarProvider>
     )
 }
