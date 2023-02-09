@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import MenuLayout from "../components/MenuLayout";
 import styles from "../styles/Home.module.css"
+import Grid from '@mui/material/Grid';
 
 
 
@@ -52,10 +53,57 @@ export default function Home(){
 
 
     return(
-        <div className={styles.bg}>
+      <div className={styles.bg}>
+        <Head>
+        <title> Replicate and Next.js</title>
+        <link rel="icon" href="/favicon.ico" />
+        </Head>
+        <Grid container spacing = {1}>
+        <Grid item xs = {1}>
+        <MenuLayout></MenuLayout>
+        </Grid>
+        <Grid item xs = {10}>
+        <div className={styles.containerFixedStability}>
+        Dream something...{" "}
+        <p/>
+        <a href="https://replicate.com/stability-ai/stable-diffusion">stability-ai/stable-diffusion</a>
+        </div>
+        </Grid>
+        <Grid item xs = {9}>
+        <form className={styles.form} onSubmit={handleSubmit}>
+        <input type="text" name="prompt" placeholder="Enter a prompt to display an image" />
+        <button type="submit">Go!</button>
+        </form>
+        </Grid>
+        <Grid item xs = {7}>
+        {prediction && (
+        <div>
+            {prediction.output && (
+              <div className={styles.imageWrapper}>
+              <Image
+                fill
+                src={prediction.output[prediction.output.length - 1]}
+                alt="output"
+                sizes='100vw'
+              />
+              </div>
+            )} 
+        <div className={styles.homeTitle}>status: {prediction.status}</div> 
+        </div>
+      )}
+        </Grid>
+        </Grid>
+
+
+        </div>
+  );
+}
+
+/*
+<div className={styles.bg}>
             <div className={styles.container}>
                 <Head>
-                    <title> Replicate and Next.js</title>
+                    
                 </Head>
                 <p>
                 Dream something with{" "}
@@ -87,5 +135,4 @@ export default function Home(){
       )}
     <MenuLayout />
     </div>
-  );
-}
+*/

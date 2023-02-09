@@ -1,17 +1,28 @@
 import { useState } from "react";
+import Head from 'next/head';
 import styles from "../styles/Home.module.css";
-import { ProSidebarProvider } from "react-pro-sidebar";
 import MenuLayout from "../components/MenuLayout";
+import Grid from '@mui/material/Grid';
 
 
-// Homepage
+// About Page
 export default function About(){
-    return(
+    return (
         <div className={styles.bg}>
-                <div className={styles.container}>
-                    About Me
-                </div>
+        <Head>
+        <title>Jacob</title>
+        <link rel="icon" href="/favicon.ico" />
+        </Head>
+        <Grid container spacing = {2}>
+        <Grid item xs = {1}>
         <MenuLayout></MenuLayout>
+        </Grid>
+        <Grid item xs = {10}>
+        <div className={styles.containerFixed}>
+            About
         </div>
-    );
-}
+        </Grid>
+        </Grid>
+        </div>
+      )
+        }

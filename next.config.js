@@ -3,6 +3,9 @@ https://replicate.com/docs/get-started/nextjs
 */
 
 /** @type {import('next').NextConfig} */
+
+
+
 const nextConfig = {
   reactStrictMode: true,
   images: {
