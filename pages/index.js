@@ -2,9 +2,12 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import MenuLayout from '../components/MenuLayout';
 
+<<<<<<< HEAD
 // Certificate Handling
 
 
+=======
+>>>>>>> bba0a114a255144d5de8dae65856fbd802546895
 // MUI
 import React from 'react';
 import Grid from '@mui/material/Grid';

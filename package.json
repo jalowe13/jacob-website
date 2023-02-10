@@ -16,10 +16,14 @@
     "react-dom": "18.2.0",
     "react-pro-sidebar": "^1.0.0",
     "typed.js": "^2.0.12",
+<<<<<<< HEAD
     "typewriter-effect": "^2.19.0",
     "webpack": "^5.75.0"
   },
   "devDependencies": {
     "eslist": "^1.0.0-beta.1"
+=======
+    "typewriter-effect": "^2.19.0"
+>>>>>>> bba0a114a255144d5de8dae65856fbd802546895
   }
 }
