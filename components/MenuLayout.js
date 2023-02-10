@@ -10,6 +10,10 @@ import Link from 'next/link'
 // Sidebar Package - https://www.npmjs.com/package/react-pro-sidebar
 // React router Package for Menu links - https://reactrouter.com/en/main
 
+// Suppress jest warning 
+//
+https://stackoverflow.com/questions/58070996/how-to-fix-the-warning-uselayouteffect-does-nothing-on-the-server
+React.useLayoutEffect = React.useEffect
 
 // React router migration
 

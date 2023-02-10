@@ -33,3 +33,9 @@ yarn-error.log*
 challengepassword.txt
 file.csr
 private.key
+server.js
+server.key
+server_csr.txt
+www_jacoblowe_dev.ca-bundle
+www_jacoblowe_dev.crt
+www_jacoblowe_dev.p7b
