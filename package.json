@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "node server.js"
+    "start": "next build && next export",
+    "startnext": "next start -p 443"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
@@ -17,6 +18,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-pro-sidebar": "^1.0.0",
+    "sharp": "^0.31.3",
     "typed.js": "^2.0.12",
     "typewriter-effect": "^2.19.0",
     "webpack": "^5.75.0"
