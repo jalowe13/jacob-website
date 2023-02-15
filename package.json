@@ -3,12 +3,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-<<<<<<< HEAD
     "start": "next build && next export",
     "startnext": "next start -p 443"
-=======
-    "start": "next build && next export"
->>>>>>> 668b09778a0c6285236778cae0cb826631414ec4
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
