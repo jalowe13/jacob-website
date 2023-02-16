@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import MenuLayout from "../components/MenuLayout";
 import styles from "../styles/Home.module.css"
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Unstable_Grid2';
 
 
 
@@ -58,24 +58,25 @@ export default function Home(){
         <title> Replicate and Next.js</title>
         <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Grid container spacing = {1}>
+        <Grid container spacing = {2}>
         <Grid item xs = {1}>
         <MenuLayout></MenuLayout>
         </Grid>
-        <Grid item xs = {10}>
+        <Grid item xs = {11}>
         <div className={styles.containerFixedStability}>
         Dream something...{" "}
         <p/>
         <a href="https://replicate.com/stability-ai/stable-diffusion">stability-ai/stable-diffusion</a>
         </div>
         </Grid>
-        <Grid item xs = {9}>
+
+        <Grid item xs = {12}>
         <form className={styles.form} onSubmit={handleSubmit}>
         <input type="text" name="prompt" placeholder="Enter a prompt to display an image" />
         <button type="submit">Go!</button>
         </form>
         </Grid>
-        <Grid item xs = {7}>
+        <Grid item xs = {12}>
         {prediction && (
         <div>
             {prediction.output && (
@@ -92,7 +93,9 @@ export default function Home(){
         </div>
       )}
         </Grid>
+        
         </Grid>
+
 
 
         </div>

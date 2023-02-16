@@ -14,10 +14,10 @@
     background-color: maroon;
     }
   .containerFixedStability {     
-    position: "center";       
-    padding: 5rem;
+    position: "relative";       
+    padding: 1rem;
     font-size: 2rem;
-    max-width: 30rem;
+    max-width: 38rem;
     margin: 0 auto;
     background-color: maroon;
     }
@@ -25,8 +25,10 @@
 /* Form */
 /* User input HTML style */
   .form {
-    display: flex;
-    margin-left: 45rem;
+    position: "relative"; 
+    padding: 1rem;
+    margin: 0 auto;
+    min-width: 20rem;
     max-width: 30rem;
   }
 
@@ -72,10 +74,12 @@
   }
   
   .imageWrapper {
-    margin-left: 42rem;
-    width: 50%;
     aspect-ratio: 1 / 1;
-    position: relative
+    position: relative;
+
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 30rem;
   }
   
   /* Start my format */
