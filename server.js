@@ -6,29 +6,31 @@
 const { createServer } = require('http')
 const { parse } = require('url')
 const next = require('next')
-const { default: sslRedirect } = require('heroku-ssl-redirect')
+const express = require('express');
+const http = require('http');
+const https = require('https');
+const fs = require('fs');
 
-//Middleware
-const express = require('express')
+const ports = {
+    http: 80,
+    https: 443
+}
 
-const dev = process.env.NODE_ENV !== 'production'
-const hostname = 'localhost'
-const port = 80
-// when using middleware `hostname` and `port` must be provided below
-const app = next({ dev, hostname, port })
-const handle = app.getRequestHandler()
+const dev = process.env.NODE_ENV !== 'production';
+const app = next({ dev });
+const handle = app.getRequestHandler();
+const server = express();  
+
+const options = {
+    key: fs.readFileSync('server.key'),
+    cert: fs.readFileSync('www_jacoblowe_dev.crt')
+}
+
 
 app.prepare().then(() => {
-    const server = express();
-
-    //Redirect
-    server.use(sslRedirect());
     server.all('*', (req, res) => {
         return handle(req, res);
     });
-
-    server.listen(port, (err) => {
-        if (err) throw err
-        console.log(`> Ready on http://${hostname}:${port}`)
-    })
+    http.createServer(server).listen(ports.http);
+    https.createServer(options, server).listen(ports.https);
 })

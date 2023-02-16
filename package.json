@@ -4,7 +4,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next build && next export",
-    "startnext": "next start -p 443"
+    "startnext": "node server.js"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",

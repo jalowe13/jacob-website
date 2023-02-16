@@ -9,8 +9,6 @@ https://replicate.com/docs/get-started/nextjs
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    loader: 'akamai',
-    path: '',
     remotePatterns: [
       {
         protocol: "https",
