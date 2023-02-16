@@ -21,20 +21,20 @@ const MenuLayout =({children}) =>{
     const collapsed = useState(false);
     return(     
         <ProSidebarProvider>
-        <Sidebar width='192px'>
+        <Sidebar width='265px'>
             <Menu>
                 <MenuItem component={<Link href="/" />}>
                     Home
                 </MenuItem>
-                <SubMenu label="About Me">
+                <SubMenu label="About">
                 <MenuItem component={<Link href="/about" />}>
-                    About
+                    Me (WIP)
                 </MenuItem>
                 <MenuItem>
-                    Skills
+                    My Skills (WIP)
                 </MenuItem>
                 <MenuItem>
-                    Resume
+                    Resume (WIP)
                 </MenuItem>
                 </SubMenu>
                 <SubMenu label="Projects">
@@ -42,12 +42,24 @@ const MenuLayout =({children}) =>{
                 <MenuItem component={<Link href="/replicate" />}>
                 Replicate
                 </MenuItem>
+                <MenuItem component={<Link href="https://github.com/jalowe13/TheOneSDL" />}>
+                The One SDL Project (WIP)
+                </MenuItem>
+                <MenuItem>
+                VGB Unity (WIP)
+                </MenuItem>
                 </SubMenu>
                 <SubMenu label="School">
+                <MenuItem component={<Link href="https://sites.google.com/vt.edu/ece4554-group42-car-detection" />}>
+                Computer Vision
+                </MenuItem>
+                <MenuItem>
+                Machine Learning (WIP)
+                </MenuItem>
                 </SubMenu>
                 </SubMenu>
                 <MenuItem>
-                Contact Me
+                Contact Me (WIP)
                 </MenuItem>
              </Menu>
           </Sidebar>

@@ -1,5 +1,7 @@
 // Source https://replicate.com/docs/get-started/  Step 4
 
+// Note .env.local will be needed for making API calls
+
 // Backend work
 
 export default async function handler(req, res) {

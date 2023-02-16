@@ -1,7 +1,6 @@
 // HTTPS in NextJS
 // https://nextjs.org/docs/advanced-features/custom-server
-// Middleware redirect
-// https://stackoverflow.com/questions/66458059/how-do-i-force-or-redirect-my-next-js-website-to-use-https
+// Using express set up server https://stackoverflow.com/questions/55304101/https-on-localhost-using-nextjs-express
 
 const { createServer } = require('http')
 const { parse } = require('url')

@@ -28,7 +28,10 @@ export default function Home() {
         options={{
         strings: [
           "A Software Developer",
-          "Learning React.js",
+          "A Recent Graduate",
+          "Honest",
+          "Hardworking",
+          "Consistantly Improving",
           "A Learner",
           "Curious",
           "Joyful",
