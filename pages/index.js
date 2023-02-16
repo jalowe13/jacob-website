@@ -31,7 +31,7 @@ export default function Home() {
           "A Recent Graduate",
           "Honest",
           "Hardworking",
-          "Consistantly Improving",
+          "Consistently Improving",
           "A Learner",
           "Curious",
           "Joyful",
