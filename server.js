@@ -6,7 +6,6 @@ const { createServer } = require('http')
 const { parse } = require('url')
 const next = require('next')
 const express = require('express');
-const http = require('http');
 const https = require('https');
 const fs = require('fs');
 
@@ -30,6 +29,5 @@ app.prepare().then(() => {
     server.all('*', (req, res) => {
         return handle(req, res);
     });
-    http.createServer(server).listen(ports.http);
     https.createServer(options, server).listen(ports.https);
 })

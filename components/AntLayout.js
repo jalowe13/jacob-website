@@ -34,7 +34,7 @@ const items = [
   getItem('Home', '1', <HomeOutlined/>),
   getItem('About', 'h1', <ExclamationCircleOutlined />, [
     getItem('Myself', '2', <UserOutlined />),
-    getItem('My Skills (WIP)', '3', <CarryOutOutlined />),
+    getItem('My Skills', '3', <CarryOutOutlined />),
     getItem('My Resume', '4', <BookOutlined />)
   ]),
   {
@@ -51,7 +51,7 @@ const items = [
       getItem('ML', '9', <DesktopOutlined />),
     ]),
   ]),
-  getItem('Contact Me (WIP)', '10', <ExclamationCircleOutlined />)
+  getItem('Contact Me', '10', <ExclamationCircleOutlined />)
 ];
 
 // Returning Menu Options
