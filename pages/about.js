@@ -4,25 +4,18 @@ import styles from "../styles/Home.module.css";
 import MenuLayout from "../components/MenuLayout";
 import Grid from '@mui/material/Grid';
 
+import Ant from '../components/AntLayout';
+
 
 // About Page
 export default function About(){
+  const headerContent = <h1>About</h1>;
+  const pageContent = 
+  <h1>
+  Under Construction
+  </h1>
+
     return (
-        <div className={styles.bg}>
-        <Head>
-        <title>Jacob</title>
-        <link rel="icon" href="/favicon.ico" />
-        </Head>
-        <Grid container spacing = {2}>
-        <Grid item xs = {1}>
-        <MenuLayout></MenuLayout>
-        </Grid>
-        <Grid item xs = {10}>
-        <div className={styles.containerFixed}>
-            About
-        </div>
-        </Grid>
-        </Grid>
-        </div>
+      <Ant header={headerContent} content={pageContent}/>
       )
         }

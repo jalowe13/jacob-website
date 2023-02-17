@@ -1,28 +1,23 @@
-import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import MenuLayout from '../components/MenuLayout';
+import Ant from '../components/AntLayout';
+
+import {Image} from 'antd';
 
 // MUI
 import React from 'react';
-import Grid from '@mui/material/Grid';
 
 //Typewriter https://www.npmjs.com/package/typewriter-effect
 import TypeWriter from 'typewriter-effect';
 
 
+
+
 export default function Home() {
-  return (
-    <div className={styles.bg}>
-    <Head>
-    <title>Jacob</title>
-    <link rel="icon" href="/favicon.ico" />
-    </Head>
-    <Grid container spacing = {2}>
-    <Grid item xs = {1}>
-    <MenuLayout></MenuLayout>
-    </Grid>
-    <Grid item xs = {10}>
-        <div className={styles.containerFixed}>
+  // Content for home
+  const headerContent = <h1>Home</h1>;
+  const pageContent = 
+<div>
+  <h1>
         I'm Jacob and I am
         <TypeWriter
         options={{
@@ -44,9 +39,15 @@ export default function Home() {
         delay: 'natural' // can also be in ms
       }}
       ></TypeWriter>
-      </div>
-    </Grid>
-    </Grid>
-    </div>
+  </h1>
+  <Image
+    src="https://media.licdn.com/dms/image/C4E03AQE3wYtlQmkWtA/profile-displayphoto-shrink_800_800/0/1568144969821?e=1681948800&v=beta&t=JZ0wTuUX2g75ANzZNMEw27izdJbeKFK_Ze86lx9T210"
+/>
+</div>
+
+  return (
+    <Ant header={headerContent} content={pageContent}/>
   )
     }
+
+    
