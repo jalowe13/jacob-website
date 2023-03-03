@@ -6,6 +6,7 @@ const { createServer } = require('http')
 const { parse } = require('url')
 const next = require('next')
 const express = require('express');
+const http = require('http');
 const https = require('https');
 const fs = require('fs');
 
@@ -24,10 +25,17 @@ const options = {
     cert: fs.readFileSync('www_jacoblowe_dev.crt')
 }
 
+// Enable to start local development on localhost
+localTest = false
+
 
 app.prepare().then(() => {
     server.all('*', (req, res) => {
         return handle(req, res);
     });
     https.createServer(options, server).listen(ports.https);
+    if (localTest)
+    {
+        http.createServer(server).listen(ports.http);
+    }
 })
