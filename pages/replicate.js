@@ -5,6 +5,7 @@ import Image from "next/image";
 import MenuLayout from "../components/MenuLayout";
 import styles from "../styles/Home.module.css"
 import Grid from '@mui/material/Unstable_Grid2';
+import Ant from '../components/AntLayout';
 
 
 
@@ -50,17 +51,18 @@ export default function Home(){
       }
     };
 
+    // Header
+    const headerContent = <h1>Replicate</h1>;
 
-
-    return(
-      <div className={styles.bg}>
+    // Handling everything related to Replicate and Next JS
+    const pageContent = 
+    <div>
         <Head>
         <title> Replicate and Next.js</title>
         <link rel="icon" href="/favicon.ico" />
         </Head>
         <Grid container spacing = {2}>
         <Grid item xs = {1}>
-        <MenuLayout></MenuLayout>
         </Grid>
         <Grid item xs = {11}>
         <div className={styles.containerFixedStability}>
@@ -99,6 +101,10 @@ export default function Home(){
 
 
         </div>
+
+    // Wrap instead into the ANT Layout
+    return(
+      <Ant header={headerContent} content={pageContent}/>
   );
 }
 

@@ -73,9 +73,9 @@ export default function Ant(props){
         // case '4':
         //   Router.push('/resume');
         //   break;
-        // case '5':
-        //   Router.push('/replicate');
-        //   break;
+        case '5':
+          Router.push('/replicate');
+          break;
         case '6':
           Router.push('https://github.com/jalowe13/TheOneSDL');
           break;
