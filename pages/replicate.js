@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Head from "next/head";
-import Image from "next/image";
+import { Image } from "antd";
 
 import MenuLayout from "../components/MenuLayout";
 import styles from "../styles/Home.module.css"
@@ -84,10 +84,9 @@ export default function Home(){
             {prediction.output && (
               <div className={styles.imageWrapper}>
               <Image
-                fill
+                width="100%"
                 src={prediction.output[prediction.output.length - 1]}
                 alt="output"
-                sizes='100vw'
               />
               </div>
             )} 
