@@ -26,7 +26,7 @@ const options = {
 }
 
 // Enable to start local development on localhost
-localTest = false
+localTest = true
 
 
 app.prepare().then(() => {

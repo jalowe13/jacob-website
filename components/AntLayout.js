@@ -7,7 +7,8 @@ import Router from 'next/router';
 import {Layout, Menu, theme, Image} from 'antd';
 import { HomeOutlined, ExclamationCircleOutlined, FileExclamationOutlined,
 AppstoreOutlined, BookOutlined, CarryOutOutlined, UserOutlined,
-EyeOutlined,DesktopOutlined, SmileOutlined, BgColorsOutlined,
+EyeOutlined,DesktopOutlined, SmileOutlined, BgColorsOutlined,FileUnknownOutlined,
+GithubFilled
 } from '@ant-design/icons';
 const {Header, Content, Footer, Sider} = Layout;
 
@@ -30,12 +31,21 @@ function getItem(label, key, icon, children,path, type) {
 }
 
 // All Menu Items
-const items = [
-  getItem('Home', '1', <HomeOutlined/>),
+// Original Icons
+/*
   getItem('About', 'h1', <ExclamationCircleOutlined />, [
     getItem('Myself', '2', <UserOutlined />),
     getItem('My Skills', '3', <CarryOutOutlined />),
     getItem('My Resume', '4', <BookOutlined />)
+    getItem('ML', '9', <DesktopOutlined />),
+    getItem('Contact Me', '10', <ExclamationCircleOutlined />)
+*/
+const items = [
+  getItem('Home', '1', <HomeOutlined/>),
+  getItem('About', 'h1', <FileUnknownOutlined />, [
+    getItem('Myself', '2', <FileUnknownOutlined />),
+    getItem('My Skills', '3', <FileUnknownOutlined />),
+    getItem('My Resume', '4', <FileUnknownOutlined />)
   ]),
   {
     type: 'divider',
@@ -43,15 +53,15 @@ const items = [
   getItem('Projects', 'h2', <AppstoreOutlined />, [
     getItem('Personal', 'h3', <SmileOutlined />, [
       getItem('Replicate', '5', <BgColorsOutlined />),
-      getItem('TheOne SDL', '6', <FileExclamationOutlined />),
-      getItem('VGB Unity', '7', <FileExclamationOutlined />)
+      getItem('TheOne SDL', '6', <GithubFilled/>),
+      getItem('VGB Unity', '7', <FileUnknownOutlined />)
     ]),
-    getItem('School', 'h4', <FileExclamationOutlined />, [
+    getItem('School', 'h4', <BookOutlined/>, [
       getItem('Comp Vision', '8', <EyeOutlined />),
-      getItem('ML', '9', <DesktopOutlined />),
+      getItem('ML', '9', <FileUnknownOutlined />),
     ]),
   ]),
-  getItem('Contact Me', '10', <ExclamationCircleOutlined />)
+  getItem('Contact Me', '10', <FileUnknownOutlined />)
 ];
 
 // Returning Menu Options
