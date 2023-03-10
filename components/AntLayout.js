@@ -8,7 +8,7 @@ import {Layout, Menu, theme, Image} from 'antd';
 import { HomeOutlined, ExclamationCircleOutlined, FileExclamationOutlined,
 AppstoreOutlined, BookOutlined, CarryOutOutlined, UserOutlined,
 EyeOutlined,DesktopOutlined, SmileOutlined, BgColorsOutlined,FileUnknownOutlined,
-GithubFilled
+GithubFilled, SketchOutlined
 } from '@ant-design/icons';
 const {Header, Content, Footer, Sider} = Layout;
 
@@ -42,10 +42,10 @@ function getItem(label, key, icon, children,path, type) {
 */
 const items = [
   getItem('Home', '1', <HomeOutlined/>),
-  getItem('About', 'h1', <FileUnknownOutlined />, [
-    getItem('Myself', '2', <FileUnknownOutlined />),
-    getItem('My Skills', '3', <FileUnknownOutlined />),
-    getItem('My Resume', '4', <FileUnknownOutlined />)
+  getItem('About', 'h1', <ExclamationCircleOutlined />, [
+    // getItem('Myself', '2', <FileUnknownOutlined />),
+    getItem('My Skills', '3', <CarryOutOutlined />),
+    // getItem('My Resume', '4', <FileUnknownOutlined />)
   ]),
   {
     type: 'divider',
@@ -77,9 +77,9 @@ export default function Ant(props){
         // case '2':
         //   Router.push('/about');
         //   break;
-        // case '3':
-        //   Router.push('/skills');
-        //   break;
+        case '3':
+          Router.push('/skills');
+          break;
         // case '4':
         //   Router.push('/resume');
         //   break;

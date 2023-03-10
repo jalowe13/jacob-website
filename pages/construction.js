@@ -15,7 +15,7 @@ export default function Construction(){
 <div>
   <h1>
   This page is under construction. Check back later!
-  </h1>;
+  </h1>
     <Image
     src="https://www.phoenix.gov/eodsite/SiteAssets/Pages/Site-Under-Construction/website-construction-graphic-4.jpg"
     preview={false}
