@@ -111,6 +111,8 @@ export default function Ant(props){
     const {
         token: { colorBgContainer },
       } = theme.useToken();
+
+
     return (
 
         <Layout>
@@ -118,6 +120,7 @@ export default function Ant(props){
             height
             breakpoint="lg"
             collapsedWidth="0"
+            width={140}
             onBreakpoint={(broken) => {
               console.log(broken);
             }}
@@ -126,9 +129,9 @@ export default function Ant(props){
             }}
           >
             <div className="logo" />
-            <Menu theme="dark" mode="inline"
+            <Menu theme="dark" mode="vertical"
             style={{
-              width: 200
+              width: 140
             }}
             onClick = {onClick}
             defaultSelectedKeys={['home']}
@@ -136,6 +139,7 @@ export default function Ant(props){
             items={items}
             />
           </Sider>
+          
           <Layout>
             <Header style={{ padding: 0, background: colorBgContainer }}>
              {props.header}
