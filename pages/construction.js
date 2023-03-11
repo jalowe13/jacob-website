@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Head from 'next/head';
 import styles from "../styles/Home.module.css";
-import MenuLayout from "../components/MenuLayout";
 import Grid from '@mui/material/Grid';
 
 import Ant from '../components/AntLayout';

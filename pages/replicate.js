@@ -2,7 +2,6 @@ import { useState } from "react";
 import Head from "next/head";
 import { Image } from "antd";
 
-import MenuLayout from "../components/MenuLayout";
 import styles from "../styles/Home.module.css"
 import Grid from '@mui/material/Unstable_Grid2';
 import Ant from '../components/AntLayout';

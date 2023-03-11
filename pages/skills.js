@@ -95,7 +95,7 @@ export default function Skills(){
     // Outercard
     let outerCard = (
       <div>
-        <Card title={"Languages, Frameworks, and Environments"}>
+        <Card title={"Languages and Frameworks"}>
         Ordered by level of comfort. These are my studied coding languages, frameworks, and environments during my time in university working on projects, research, and outside learning/development.
         </Card>
       </div>
