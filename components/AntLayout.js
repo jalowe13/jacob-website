@@ -117,7 +117,6 @@ export default function Ant(props){
 
         <Layout>
           <Sider
-            height
             breakpoint="lg"
             collapsedWidth="0"
             width={140}
