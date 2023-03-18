@@ -25,8 +25,8 @@ const options = {
     cert: fs.readFileSync('www_jacoblowe_dev.crt')
 }
 
-// Enable to start local development on localhost
-localTest = true
+// Enable to start local development on localhost. Toggle this for forbidden 403 errors
+localTest = false
 
 
 app.prepare().then(() => {
