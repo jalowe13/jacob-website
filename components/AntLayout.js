@@ -45,7 +45,7 @@ const items = [
   getItem('Home', '1', <HomeOutlined/>),
   getItem('About', 'h1', <ExclamationCircleOutlined />, [
     getItem('My Skills', '3', <CarryOutOutlined />),
-    getItem('My Resume', '4', <FileUnknownOutlined />)
+    //getItem('My Resume', '4', <FileUnknownOutlined />)
   ]),
   {
     type: 'divider',
@@ -54,14 +54,14 @@ const items = [
     getItem('Personal', 'h3', <SmileOutlined />, [
       getItem('Replicate', '5', <BgColorsOutlined />),
       getItem('TheOne SDL', '6', <GithubFilled/>),
-      getItem('VGB Unity', '7', <FileUnknownOutlined />)
+      //getItem('VGB Unity', '7', <FileUnknownOutlined />)
     ]),
     getItem('School', 'h4', <BookOutlined/>, [
       getItem('Comp Vision', '8', <EyeOutlined />),
       getItem('ML', '9', <FileUnknownOutlined />),
     ]),
   ]),
-  getItem('Contact Me', '10', <FileUnknownOutlined />)
+  //getItem('Contact Me', '10', <FileUnknownOutlined />)
 ];
 
 // Returning Menu Options
