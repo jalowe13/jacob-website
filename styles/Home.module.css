@@ -32,10 +32,11 @@
     max-width: 30rem;
   }
 
+  /*
+   Home title font size
+  */
   .homeTitle {
-    color:tomato;
-    margin-left: 1rem;
-    font-size: 1.3rem;
+    font-size: 2rem;
   }
 
   .typedContainer {

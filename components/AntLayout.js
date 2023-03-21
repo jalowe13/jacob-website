@@ -10,6 +10,7 @@ AppstoreOutlined, BookOutlined, CarryOutOutlined, UserOutlined,
 EyeOutlined,DesktopOutlined, SmileOutlined, BgColorsOutlined,FileUnknownOutlined,
 GithubFilled, SketchOutlined
 } from '@ant-design/icons';
+import { hexToRgb } from '@mui/material';
 const {Header, Content, Footer, Sider} = Layout;
 
 // Uses Code Layout from https://ant.design/components/layout#components-layout-demo-responsive
@@ -43,9 +44,8 @@ function getItem(label, key, icon, children,path, type) {
 const items = [
   getItem('Home', '1', <HomeOutlined/>),
   getItem('About', 'h1', <ExclamationCircleOutlined />, [
-    // getItem('Myself', '2', <FileUnknownOutlined />),
     getItem('My Skills', '3', <CarryOutOutlined />),
-    // getItem('My Resume', '4', <FileUnknownOutlined />)
+    getItem('My Resume', '4', <FileUnknownOutlined />)
   ]),
   {
     type: 'divider',
@@ -144,7 +144,7 @@ export default function Ant(props){
              {props.header}
             </Header>
             <Content style={{ margin: '24px 16px 0' }}>
-              <div style={{padding: 24, minHeight: 700, background: colorBgContainer }}>
+              <div style={{padding: 24, minHeight: 700, background: colorBgContainer, backgroundColor: "#1f8c86" }}>
               {props.content}
               </div>
             </Content>

@@ -1,6 +1,7 @@
 import styles from '../styles/Home.module.css';
 import Ant from '../components/AntLayout';
 
+
 import {Image} from 'antd';
 
 // MUI
@@ -16,7 +17,7 @@ export default function Home() {
   // Content for home
   const headerContent = <h1>Home</h1>;
   const pageContent = 
-<div>
+<div className={styles.homeTitle}>
   <h1>
         I'm Jacob and I am
         <TypeWriter
@@ -24,14 +25,15 @@ export default function Home() {
         strings: [
           "A Software Developer",
           "A Recent Graduate",
-          "Honest",
-          "Hardworking",
-          "Consistently Improving",
-          "A Learner",
-          "Curious",
-          "Joyful",
-          "Kind",
-          "Passionate"
+          "Ready To Make An Impact",
+          "Curious and Thoughtful",
+          "Not Afraid Of A Challenge",
+          "Constantly Learning",
+          "Good At Bad Jokes",
+          "A Pretty Happy Guy",
+          "Kind To Others",
+          "Passionate About My Craft",
+
         ],
         autoStart: true,
         loop: true,
