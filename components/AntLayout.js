@@ -61,7 +61,7 @@ const items = [
       getItem('ML', '9', <FileUnknownOutlined />),
     ]),
   ]),
-  //getItem('Contact Me', '10', <FileUnknownOutlined />)
+  getItem('Contact Me', '10', <ExclamationCircleOutlined />)
 ];
 
 // Returning Menu Options
@@ -98,9 +98,9 @@ export default function Ant(props){
         // case '9':
         //   Router.push('/ml');
         //   break;
-        // case '10':
-        //   Router.push('/contact');
-        //   break;
+        case '10':
+          Router.push('/contact');
+          break;
         default:
           Router.push('/construction');
           break;           
