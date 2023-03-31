@@ -14,49 +14,55 @@ export default function Skills(){
     const data = [
         {
             title: "Python",
-            description: "2 Years",
+            description: "2 Years: Learned in parallel with AI, Machine Learning, Computer Vision courses.",
             src:"https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
             infosrc: "https://en.wikipedia.org/wiki/Python_(programming_language)"
         },
         {
             title: "C++",
-            description: "5 Years",
+            description: "5 Years: Learned backbone concepts of Object Oriented Programming, Data Structures and Algorithms, and Software development work.",
             src:"https://cdn-icons-png.flaticon.com/512/6132/6132222.png",
             infosrc:"https://en.wikipedia.org/wiki/C%2B%2B"
         },
         {
             title: "C",
-            description: "2 Years",
+            description: "2 Years: Learned in parallel with an embedded systems, real time systems, and digital systems courses.",
             src:"https://upload.wikimedia.org/wikipedia/commons/3/35/The_C_Programming_Language_logo.svg",
             infosrc:"https://en.wikipedia.org/wiki/C_(programming_language)"
         },
         {
             title: "Java",
-            description: "2 Years",
+            description: "2 Years: Learned from self learning and introductary Java course in university.",
             src:"https://www.kindpng.com/picc/m/198-1984828_java-icon-transparent-hd-png-download.png",
             infosrc:"https://en.wikipedia.org/wiki/Java_%28programming_language%29"
         },
         {
             title: "Javascript",
-            description:"2 Years",
+            description:"2 Years: Self learning and a scripting video game design university course.",
             src:"https://raw.githubusercontent.com/voodootikigod/logo.js/master/js.png",
             infosrc:"https://en.wikipedia.org/wiki/JavaScript"
         },
         {
+            title: "NumPy",
+            description:"6 Months: Learned in parallel with an introductary Machine Learning Course",
+            src:"https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg",
+            infosrc:"https://en.wikipedia.org/wiki/NumPy"
+        },
+        {
           title: "Shell and Batch Scripting",
-          description:"3 Years",
+          description:"3 Years: Earliest form of programming with Batch scripts, used with building and application development with MSBuild and Makefiles",
           src:"https://th.bing.com/th/id/OIP.Fz3xjZQvBRcONmwo2-JRaQHaHa?pid=ImgDet&rs=1",
           infosrc:"https://en.wikipedia.org/wiki/Shell_script"
         },
         {
           title: "Verilog",
-          description:"2 Years",
+          description:"2 Years: Used in Digital system design and Embedded systems courses ",
           src:"https://mshr-h.gallerycdn.vsassets.io/extensions/mshr-h/veriloghdl/1.2.0/1592841382860/Microsoft.VisualStudio.Services.Icons.Default",
           infosrc:"https://en.wikipedia.org/wiki/Verilog"
         },
         {
             title: "HTML with CSS",
-            description:"1 Year",
+            description:"1 Year: Self learning",
             src:"https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
             infosrc:"https://en.wikipedia.org/wiki/HTML"
         },
@@ -68,7 +74,7 @@ export default function Skills(){
         },
         {
           title: "MIPS Assembly",
-          description:"1 Year",
+          description:"6 Months: Computer Architecture course",
           src:"https://muqtadaa.github.io/images/mipsIcon.png",
           infosrc:"https://en.wikipedia.org/wiki/MIPS_architecture"
         },
@@ -80,7 +86,7 @@ export default function Skills(){
         },
         {
             title: "QT",
-            description:"1 Years",
+            description:"6 months: Applied software design course as a UI/UX framework",
             src:"https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg",
             infosrc:"https://en.wikipedia.org/wiki/Qt_(software)"
         },
@@ -110,7 +116,7 @@ export default function Skills(){
         },
         {
             title: "Computer Vision",
-            description:"1 Year",
+            description:"6 Months",
             src:"https://upload.wikimedia.org/wikipedia/commons/2/2d/Intersection_over_Union_-_object_detection_bounding_boxes.jpg",
             infosrc:"https://en.wikipedia.org/wiki/Computer_vision"
         },
