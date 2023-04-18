@@ -31,6 +31,12 @@ export default function Skills(){
             infosrc:"https://en.wikipedia.org/wiki/C_(programming_language)"
         },
         {
+          title: "C#",
+          description: "1 Year: Learned in parallel with an video game design course and self learning.",
+          src:"https://upload.wikimedia.org/wikipedia/commons/0/0d/C_Sharp_wordmark.svg",
+          infosrc:"https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+        },
+        {
             title: "Java",
             description: "2 Years: Learned from self learning and introductary Java course in university.",
             src:"https://www.kindpng.com/picc/m/198-1984828_java-icon-transparent-hd-png-download.png",
@@ -55,6 +61,12 @@ export default function Skills(){
           infosrc:"https://en.wikipedia.org/wiki/Shell_script"
         },
         {
+          title: "MATLAB",
+          description:"2 Years: Learned in Introductary general/computer engineering courses.",
+          src:"https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png",
+          infosrc:"https://en.wikipedia.org/wiki/MATLAB"
+        },
+        {
           title: "Verilog",
           description:"2 Years: Used in Digital system design and Embedded systems courses ",
           src:"https://mshr-h.gallerycdn.vsassets.io/extensions/mshr-h/veriloghdl/1.2.0/1592841382860/Microsoft.VisualStudio.Services.Icons.Default",
@@ -67,16 +79,29 @@ export default function Skills(){
             infosrc:"https://en.wikipedia.org/wiki/HTML"
         },
         {
-            title: "Node.js",
-            description:"Currently learning",
-            src:"https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
-            infosrc:"https://en.wikipedia.org/wiki/Node.js"
-        },
-        {
           title: "MIPS Assembly",
           description:"6 Months: Computer Architecture course",
           src:"https://muqtadaa.github.io/images/mipsIcon.png",
           infosrc:"https://en.wikipedia.org/wiki/MIPS_architecture"
+        },
+        {
+          title: "QT",
+          description:"6 months: Applied software design course as a UI/UX framework",
+          src:"https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg",
+          infosrc:"https://en.wikipedia.org/wiki/Qt_(software)"
+        },
+        {
+          title: "SOLIDWORKS",
+          description: "1 Year: used in General Engineering Course",
+          src:"https://www.os-berkualitas.com/wp-content/uploads/2018/07/SolidWorks-2016.png",
+          infosrc:"https://en.wikipedia.org/wiki/SolidWorks"
+        },
+        // Learning
+        {
+          title: "Node.js",
+          description:"Currently learning",
+          src:"https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
+          infosrc:"https://en.wikipedia.org/wiki/Node.js"
         },
         {
           title: "React.js",
@@ -85,11 +110,43 @@ export default function Skills(){
           infosrc:"https://en.wikipedia.org/wiki/React_(JavaScript_library)"
         },
         {
-            title: "QT",
-            description:"6 months: Applied software design course as a UI/UX framework",
-            src:"https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg",
-            infosrc:"https://en.wikipedia.org/wiki/Qt_(software)"
+          title: ".NET",
+          description:"Currently learning",
+          src:"https://upload.wikimedia.org/wikipedia/commons/7/7d/Microsoft_.NET_logo.svg",
+          infosrc:"https://en.wikipedia.org/wiki/.NET_Framework"
         },
+        {
+          title: "SQL",
+          description:"Want to learn",
+          src:"https://pixhost.icu/avaxhome/2c/18/0059182c.jpg",
+          infosrc:"https://en.wikipedia.org/wiki/SQL"
+        },
+        { 
+          title: "Amazon Web Services",
+          description:"Want to learn",
+          src:"https://www.pngplay.com/wp-content/uploads/3/Amazon-Web-Services-AWS-Logo-Transparent-PNG.png",
+          infosrc:"https://aws.amazon.com/what-is-aws/"
+        },
+        { 
+          title: "Terraform",
+          description:"Want to learn",
+          src:"https://jaxlondon.com/wp-content/uploads/2017/08/terraform_Logo.png",
+          infosrc:"https://en.wikipedia.org/wiki/Terraform_(software)"
+        },
+        { 
+          title: "Jenkins",
+          description:"Want to learn",
+          src:"https://cd.foundation/wp-content/uploads/sites/78/2020/04/jenkins-stacked-color-1-981x1024.png",
+          infosrc:"https://en.wikipedia.org/wiki/Jenkins_(software)"
+        },
+        { 
+          title: "Kubernetes",
+          description:"Want to learn",
+          src:"https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/1920px-Kubernetes_logo_without_workmark.svg.png",
+          infosrc:"https://en.wikipedia.org/wiki/Kubernetes"
+        },
+
+        // Topics
         {
             title: "OOP",
             description:"Object Oriented Programming: 5 Years",
@@ -207,24 +264,44 @@ export default function Skills(){
     )
     let outerCard2 = (
       <div>
+        <Card title={"Learning and Planned"}>
+          Languages, and frameworks I am currently learning or want to learn.
+        </Card>
+      </div>
+    )
+    let outerCard3 = (
+      <div>
         <Card title={"Topics"}>
         Studied concepts and topics
         </Card>
       </div>
     )
+
+    // Push header for Languages
     completePageContent.push(outerCard);
 
     // Innercards
     // Cards 0-12 are the Languages and frameworks
-    let row = createRow(0,12); // Create first inner cards
+    let row = createRow(0,14); // Create first inner cards
     completePageContent.push(row);
 
+    // Push header for learning
     completePageContent.push(outerCard2);
+
+    // Learning Innercards
+    // Cards 13 through 15 are the Learning Languages and Frameworks
+    let row2 = createRow(14,21);
+    completePageContent.push(row2);
+
+    //Push Header for Skills
+    completePageContent.push(outerCard3)
 
     // Innercards
     // Cards 0-12 are the Languages and frameworks
-    let row2 = createRow(12,22); // Create first inner cards
-    completePageContent.push(row2);
+    let row3 = createRow(21,32); // Create first inner cards
+    completePageContent.push(row3);
+
+    
     
     const headerContent = <h1>Skills </h1>
     
