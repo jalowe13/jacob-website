@@ -290,7 +290,7 @@ export default function Skills(){
 
     // Learning Innercards
     // Cards 13 through 15 are the Learning Languages and Frameworks
-    let row2 = createRow(14,21);
+    let row2 = createRow(14,22);
     completePageContent.push(row2);
 
     //Push Header for Skills
@@ -298,7 +298,7 @@ export default function Skills(){
 
     // Innercards
     // Cards 0-12 are the Languages and frameworks
-    let row3 = createRow(21,32); // Create first inner cards
+    let row3 = createRow(22,32); // Create first inner cards
     completePageContent.push(row3);
 
     
