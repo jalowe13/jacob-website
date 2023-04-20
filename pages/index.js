@@ -43,7 +43,7 @@ export default function Home() {
       ></TypeWriter>
   </h1>
   <Image
-    src="https://media.licdn.com/dms/image/C4E03AQE3wYtlQmkWtA/profile-displayphoto-shrink_800_800/0/1568144969821?e=1681948800&v=beta&t=JZ0wTuUX2g75ANzZNMEw27izdJbeKFK_Ze86lx9T210"
+    src="https://lh3.googleusercontent.com/a/AGNmyxZ_R90Bnr_DT5501Z69BIxh4KNdcUmiuzlt12tXkmk=s576"
 />
 </div>
 
