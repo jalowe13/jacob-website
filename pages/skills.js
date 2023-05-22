@@ -2,7 +2,7 @@ import Ant from '../components/AntLayout';
 
 // ANT Components
 // https://3x.ant.design/components/list/
-import { Card,Col,Row, Icon, List, Avatar } from 'antd';
+import { Card,Col,Row} from 'antd';
 
 const { Meta } = Card;
 
@@ -13,16 +13,16 @@ export default function Skills(){
   // Card data
     const data = [
         {
-            title: "Python",
-            description: "2 Years: Learned in parallel with AI, Machine Learning, Computer Vision courses.",
-            src:"https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
-            infosrc: "https://en.wikipedia.org/wiki/Python_(programming_language)"
-        },
-        {
             title: "C++",
             description: "5 Years: Learned backbone concepts of Object Oriented Programming, Data Structures and Algorithms, and Software development work.",
             src:"https://cdn-icons-png.flaticon.com/512/6132/6132222.png",
             infosrc:"https://en.wikipedia.org/wiki/C%2B%2B"
+        },
+        {
+            title: "Python",
+            description: "2 Years: Learned in parallel with AI, Machine Learning, Computer Vision courses.",
+            src:"https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
+            infosrc: "https://en.wikipedia.org/wiki/Python_(programming_language)"
         },
         {
             title: "C",
@@ -98,28 +98,28 @@ export default function Skills(){
         },
         // Learning
         {
+          title: "MySQL",
+          description:"Currently learning, knows table creation, column inserts and edits, and queries",
+          src:"https://pixhost.icu/avaxhome/2c/18/0059182c.jpg",
+          infosrc:"https://en.wikipedia.org/wiki/SQL"
+        },
+        {
           title: "Node.js",
-          description:"Currently learning",
+          description:"Currently learning, Runs this site",
           src:"https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
           infosrc:"https://en.wikipedia.org/wiki/Node.js"
         },
         {
           title: "React.js",
-          description:"Currently learning",
+          description:"Currently learning, Runs this site",
           src:"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png",
           infosrc:"https://en.wikipedia.org/wiki/React_(JavaScript_library)"
         },
         {
           title: ".NET",
-          description:"Currently learning",
+          description:"Currently learning: Window and button creation",
           src:"https://upload.wikimedia.org/wikipedia/commons/7/7d/Microsoft_.NET_logo.svg",
           infosrc:"https://en.wikipedia.org/wiki/.NET_Framework"
-        },
-        {
-          title: "SQL",
-          description:"Want to learn",
-          src:"https://pixhost.icu/avaxhome/2c/18/0059182c.jpg",
-          infosrc:"https://en.wikipedia.org/wiki/SQL"
         },
         { 
           title: "Amazon Web Services",
