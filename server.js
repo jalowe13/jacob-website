@@ -22,7 +22,8 @@ const server = express();
 
 const options = {
     key: fs.readFileSync('server.key'),
-    cert: fs.readFileSync('www_jacoblowe_dev.crt')
+    cert: fs.readFileSync('www_jacoblowe_dev.crt'),
+    ca: fs.readFileSync('www_jacoblowe_dev.ca-bundle')
 }
 
 // Enable to start local development on localhost. Toggle this for forbidden 403 errors
@@ -33,6 +34,7 @@ app.prepare().then(() => {
     server.all('*', (req, res) => {
         return handle(req, res);
     });
+    
     https.createServer(options, server).listen(ports.https);
     if (localTest)
     {
