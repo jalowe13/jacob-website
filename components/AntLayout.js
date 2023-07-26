@@ -95,9 +95,9 @@ export default function Ant(props){
         case '8':
           Router.push('https://sites.google.com/vt.edu/ece4554-group42-car-detection');
           break;
-        // case '9':
-        //   Router.push('/ml');
-        //   break;
+        case '9':
+          Router.push('/aerospace');
+          break;
         case '10':
           Router.push('/contact');
           break;

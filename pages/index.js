@@ -4,6 +4,9 @@ import Ant from '../components/AntLayout';
 
 import {Image} from 'antd';
 
+//Routing with NextJS and ANT https://blog.logrocket.com/use-ant-design-next-js/
+import Router from 'next/router';
+
 // MUI
 import React from 'react';
 
@@ -41,7 +44,11 @@ export default function Home() {
         delay: 'natural' // can also be in ms
       }}
       ></TypeWriter>
+        <button onClick={() => Router.push('/current')}>
+    Click here to see my most recent project!  
+    </button>
   </h1>
+
   <Image
     src="https://lh3.googleusercontent.com/a/AGNmyxZ_R90Bnr_DT5501Z69BIxh4KNdcUmiuzlt12tXkmk=s576"
 />
