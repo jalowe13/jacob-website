@@ -87,7 +87,7 @@ export default function Ant(props){
           Router.push('/replicate');
           break;
         case '6':
-          Router.push('https://github.com/jalowe13/TheOneSDL');
+          Router.push('/current');
           break;
         // case '7':
         //   Router.push('/vgb');
@@ -95,9 +95,9 @@ export default function Ant(props){
         case '8':
           Router.push('https://sites.google.com/vt.edu/ece4554-group42-car-detection');
           break;
-        case '9':
-          Router.push('/aerospace');
-          break;
+        // case '9':
+        //   Router.push('/aerospace');
+        //   break;
         case '10':
           Router.push('/contact');
           break;
@@ -107,7 +107,7 @@ export default function Ant(props){
       }
     }
 
-    
+
     const {
         token: { colorBgContainer },
       } = theme.useToken();
