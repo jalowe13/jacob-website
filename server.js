@@ -27,7 +27,7 @@ const options = {
 }
 
 // Enable to start local development on localhost. Toggle this for forbidden 403 errors
-localTest = false
+localTest = true;
 
 
 app.prepare().then(() => {

@@ -13,12 +13,12 @@ export default function Current(){
     const headerContent = <h1>Current Project: TheOneSDL</h1>
     const completePageContent =
     <div>
-        <h1> Version 0.25 - A C++ and SDL2 2D Tileset Platformer Game Engine Prototype for Windows and Linux</h1>
-        <Image src="https://github-production-user-asset-6210df.s3.amazonaws.com/40873986/256396087-af2e8d4f-2f06-4718-b3a8-ababbb7e386b.png"/>
+        <h1> Version 0.39.1 - A C++ and SDL2 2D Tileset Platformer Game Engine Prototype for Windows and Linux</h1>
+        <Image src="https://github-production-user-asset-6210df.s3.amazonaws.com/40873986/296083072-b8f28707-4d1c-41e7-8d9b-b2463de06044.png"/>
         <h1>
             Windows Download: Extract and run the EXE to play!
         </h1>
-        <Button type="primary" size="large" block="large" href="https://github.com/jalowe13/TheOneSDL/releases/download/v.0.25/TheOneSDL.v.0.25.WIN.zip">
+        <Button type="primary" size="large" block="large" href="https://github.com/jalowe13/TheOneSDL/releases/download/v0.39.1/TheOneSDL_v0.39.1.zip">
             <GithubOutlined className="teamSocialIcon"/>
         </Button>
         <h1>
