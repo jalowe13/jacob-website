@@ -24,7 +24,7 @@ export default function Home() {
 <div className={styles.homeTitle}>
       <div>
         <Card title={"Current Notice 1/18/2024"}>
-        I'm in the process of moving houses. During this transition, my HTTPS local server, which usually allows for dynamic compilation and SSL certificate checking, is temporarily unavailable. In the meantime, I've hosted a static version of the site on AWS. I appreciate your understanding and patience. The dynamic compilation server is expected to be back up by 1/21/2024.
+        I'm in the process of moving houses. During this transition, local server, which usually allows for dynamic compilation and the use of replicate, is temporarily unavailable. In the meantime, I've hosted a static version of the site on AWS. I appreciate your understanding and patience. The dynamic compilation server is expected to be back up by 1/21/2024.
         </Card>
       </div>
   <h1>
