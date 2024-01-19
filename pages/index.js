@@ -3,6 +3,7 @@ import Ant from '../components/AntLayout';
 
 
 import {Image} from 'antd';
+import { Card,Col,Row} from 'antd';
 
 //Routing with NextJS and ANT https://blog.logrocket.com/use-ant-design-next-js/
 import Router from 'next/router';
@@ -21,6 +22,11 @@ export default function Home() {
   const headerContent = <h1>Home</h1>;
   const pageContent = 
 <div className={styles.homeTitle}>
+      <div>
+        <Card title={"Current Notice 1/18/2024"}>
+        I'm in the process of moving houses. During this transition, my HTTPS local server, which usually allows for dynamic compilation and SSL certificate checking, is temporarily unavailable. In the meantime, I've hosted a static version of the site on AWS. I appreciate your understanding and patience. The dynamic compilation server is expected to be back up by 1/21/2024.
+        </Card>
+      </div>
   <h1>
         I'm Jacob and I am
         <TypeWriter
