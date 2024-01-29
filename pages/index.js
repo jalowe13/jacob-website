@@ -23,8 +23,8 @@ export default function Home() {
   const pageContent = 
 <div className={styles.homeTitle}>
       <div>
-        <Card title={"Current Notice 1/18/2024"}>
-        I'm in the process of moving houses. During this transition, local server, which usually allows for dynamic compilation and the use of replicate, is temporarily unavailable. In the meantime, I've hosted a static version of the site on AWS. I appreciate your understanding and patience. The dynamic compilation server is expected to be back up by 1/21/2024.
+        <Card title={"Current Notice 1/29/2024"}>
+        I'm in the process of moving houses. During this transition, my local server, which usually allows for dynamic compilation and the use of replicate, is unavalible. I will be transitining to AWS to host my website. In the meantime, I've hosted a static version of the site on AWS. I appreciate your understanding and patience. I will be working on incorperating my new projects into the site as soon as I can with functioning API services through AWS instead of a local machine.
         </Card>
       </div>
   <h1>
