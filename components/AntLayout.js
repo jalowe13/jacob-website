@@ -1,7 +1,4 @@
-import React, { useState } from 'react';
-
-//Routing with NextJS and ANT https://blog.logrocket.com/use-ant-design-next-js/
-import Router from 'next/router';
+import React, { useState,onClick } from 'react';
 
 // Antd Imports
 import {Layout, Menu, theme, Image} from 'antd';
@@ -67,51 +64,46 @@ const items = [
 // Returning Menu Options
 export default function Ant(props){
 
-    // On click Button redirect
-    const onClick = (e) => {
-      console.log('click', typeof(e.key));
-      switch(e.key){
-        case '1':
-          Router.push('/');
-          break;
-        // case '2':
-        //   Router.push('/about');
-        //   break;
-        case '3':
-          Router.push('/skills');
-          break;
-        // case '4':
-        //   Router.push('/resume');
-        //   break;
-        case '5':
-          Router.push('/replicate');
-          break;
-        case '6':
-          Router.push('/current');
-          break;
-        // case '7':
-        //   Router.push('/vgb');
-        //   break;
-        case '8':
-          Router.push('https://sites.google.com/vt.edu/ece4554-group42-car-detection');
-          break;
-        // case '9':
-        //   Router.push('/aerospace');
-        //   break;
-        case '10':
-          Router.push('/contact');
-          break;
-        default:
-          Router.push('/construction');
-          break;           
-      }
-    }
-
-
     const {
         token: { colorBgContainer },
       } = theme.useToken();
-
+   // On click Button redirect
+   const onClick = (e) => {
+    console.log('click', typeof(e.key));
+    switch(e.key){
+      case '1':
+        props.handleHomeClick();
+        break;
+      // case '2':
+      //   Router.push('/about');
+      //   break;
+      case '3':
+        props.handleSkillsClick();
+        break;
+      // case '4':
+      //   Router.push('/resume');
+      //   break;
+      case '5':
+        // Disabled for now until I can get the page up and api going for the AWS S3 bucket
+        props.handleReplicateClick();
+        break;
+      case '6':
+        window.location.href = 'https://github.com/jalowe13/TheOneSDL';
+        break; 
+      case '8':
+        window.location.href = 'https://sites.google.com/vt.edu/ece4554-group42-car-detection';
+        break;
+      // case '9':
+      //   Router.push('/aerospace');
+      //   break;
+      case '10':
+        props.handleContactClick();
+        break;
+      default:
+        props.handleReplicateClick();
+        break;           
+    }
+  }
 
     return (
 
@@ -143,7 +135,7 @@ export default function Ant(props){
             <Header style={{ padding: 0, background: colorBgContainer }}>
              {props.header}
             </Header>
-            <Content style={{ margin: '24px 16px 0' }}>
+            <Content style={ {margin: '24px 16px 0' }}>
               <div style={{padding: 24, minHeight: 700, background: colorBgContainer, backgroundColor: "#1f8c86" }}>
               {props.content}
               </div>

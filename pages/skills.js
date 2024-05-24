@@ -303,7 +303,6 @@ export default function Skills(){
 
     
     
-    const headerContent = <h1>Skills </h1>
     
 
 
@@ -311,6 +310,6 @@ export default function Skills(){
 
 
 return (
-    <Ant header={headerContent} content={completePageContent}/>
+  completePageContent
 )
 }

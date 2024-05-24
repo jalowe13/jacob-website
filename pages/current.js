@@ -5,14 +5,8 @@ import { Card, Image} from 'antd';
 const { Meta } = Card;
 
 export default function Current(){
-    const data = [
-        {
-
-        }
-    ]
-    const headerContent = <h1>Current Project: TheOneSDL</h1>
-    const completePageContent =
-    <div>
+    return(
+        <div>
         <h1> Version 0.39.2 - A C++ and SDL2 2D Tileset Platformer Game Engine Prototype for Windows and Linux</h1>
         <Image src="https://github-production-user-asset-6210df.s3.amazonaws.com/40873986/296116161-6076ce3c-30f0-4893-b5cc-7411a1f83793.png"/>
         <h1>
@@ -62,7 +56,5 @@ export default function Current(){
         Physics function
         </Card> */}
     </div>
-    return(
-        <Ant header={headerContent} content={completePageContent}/>
     )
 }
